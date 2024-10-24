@@ -3,7 +3,7 @@ Utility to split a certificate bundle with multiple certificates into multiple f
 per file.
 
 ## Install
-go install github.com/dmitris/pemsplit@latest
+` install github.com/dmitris/pemsplit@latest`
 
 ## Usage
 ```bash
