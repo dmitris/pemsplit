@@ -25,8 +25,8 @@ func main() {
 		return
 	}
 
-	// Split the content by the certificate delimiter
-	certificates := strings.Split(string(content), "-----END CERTIFICATE-----\n")
+	// Split the content by the certificate delimiter, add newline for the sake of the last certificate
+	certificates := strings.Split(string(content)+"\n", "-----END CERTIFICATE-----\n")
 
 	// Remove any empty strings from the list
 	var cleanedCertificates []string
